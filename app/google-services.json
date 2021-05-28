@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11342282505",
+    "project_id": "treserved-c19ba",
+    "storage_bucket": "treserved-c19ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11342282505:android:ae0bc7afb876451c2a9dd8",
+        "android_client_info": {
+          "package_name": "com.example.messangerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11342282505-942uaoam3qn3d757v3eesa4ukdpn6af5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCXKEZXfRghjwUAdSxD3fhoQscxeyhgRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11342282505-942uaoam3qn3d757v3eesa4ukdpn6af5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeGraph"
+    app:startDestination="@id/homeFragment"
+    tools:ignore="InvalidNavigation">
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.messangerapp.ui.auth.AuthFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" >
+        <action
+            android:id="@+id/action_authFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/goForgotPassword"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.example.messangerapp.ui.auth.signUp.SingUpFragment"
+        android:label="SingUpFragment" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.messangerapp.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_institutionFragment"
+            app:destination="@id/institutionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/institutionFragment"
+        android:name="com.example.messangerapp.ui.institution.InstitutionFragment"
+        android:label="fragment_caffe"
+        tools:layout="@layout/fragment_institution" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.messangerapp.ui.auth.forgotPassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+</navigation>
